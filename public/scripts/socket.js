@@ -4,7 +4,7 @@
  */ 
 
 // websocket configuration information
-const hostIP = "10.31.125.69";
+const hostIP = "SOMEONE'S IP ADDRESS";
 const port = 3000;
 let sock = new WebSocket(`ws://${hostIP}:${port}`);
 
@@ -18,6 +18,8 @@ let accs = [[0, 0, 0], [0, 0, 0]];
 let punches = ["NONE", "NONE"];
 let accAvgs = [[0, 0, 0], [0, 0, 0]];
 let vals = [];
+
+/* Removed without websockets and ESP8266 microcontroller support:
 
 // websocket connection event
 sock.onopen = function(event) {
@@ -56,6 +58,7 @@ sock.onmessage = function(event) {
     }
   }
 }
+*/
 
 // keyboard controls for debugging punches
 document.onkeydown = function(e) {

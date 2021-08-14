@@ -21,10 +21,10 @@ function Player(bot, x, y, z, radiusTop, radiusBottom, height, orientation, mass
   this.bot = bot;
   this.restPosition = new CANNON.Vec3(x, y, z);
   this.rotation = new CANNON.Vec3(0, 0, 0);
-	this.radiusTop = radiusTop;
-	this.radiusBottom = radiusBottom;
-	this.height = height;
-	this.color = color;
+  this.radiusTop = radiusTop;
+  this.radiusBottom = radiusBottom;
+  this.height = height;
+  this.color = color;
   this.orientation = orientation;
   this.opponent = null;
 

@@ -30,7 +30,8 @@ function Sphere(x, y, z, radius, mass, color, image = null, imageFace = null) {
 	if (image == null || imageFace == null) {
 		material = new THREE.MeshPhongMaterial({ color: threeColor, opacity: 0.7, transparent: false });
 	} else {
-		material = new THREE.MeshBasicMaterial({ map: loader.load(image), overdraw: 0.1 });
+		// material = new THREE.MeshBasicMaterial({ map: loader.load(image), overdraw: 0.1 });
+		material = new THREE.MeshPhongMaterial({ color: threeColor, opacity: 0.7, transparent: false });
 	}
 	this.mesh = new THREE.Mesh(geometry, material);
 	this.mesh.position.set(x, y, z);
