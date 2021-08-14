@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Just Box</title>
+	<link rel="stylesheet" href="styles.css"/> 
+</head>
+<body>
+	<section id="loading">
+		<h1>LOADING...</h1>
+		<div id="loading-bar"></div>
+		<button id="start-button">START</button>
+	</section>
+
+	<section id="title">
+		<article>
+			<div><img src="https://i.postimg.cc/YCFGjzwX/jgod.png" alt=""/></div>
+			<div>
+				<h1>JUST <span id="box">BOX</span></h1>
+				<button id="train-button">TRAIN</button>
+				<button id="play-button">PLAY</button>
+				<button id="compete-button">COMPETE</button>
+			</div>
+			<div><img src="https://i.postimg.cc/SN3YytH2/pgod.png" alt=""/></div>
+		</article>
+	</section>
+
+	<section id="game">
+
+	</section>
+
+	<section id="credits">
+		<h1>GAME OVER</span></h1>
+		<button id="replay-button">REPLAY</button>
+
+		<div id="score-form">
+			<h3>Save Score</h3>
+			<div>Username: <input id="username-input" type = "text" /></div>
+			<div id="score">Scrore: 0</div>
+			<button id="save-button">Submit</button>
+		</div>
+
+		<h3>Current Leaderboard:</h3>
+		<div id="leaderboard"></div>
+	</section>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/cannon.js/0.6.2/cannon.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r127/three.min.js"></script>
+
+	<script type="text/javascript" src="scripts/game.js"></script>
+	<script type="text/javascript" src="scripts/gameFlow.js"></script>
+	<script type="text/javascript" src="scripts/socket.js"></script>
+	<script type="text/javascript" src="scripts/api.js"></script>
+
+	<script type="text/javascript" src="scripts/Player.js"></script>
+	<script type="text/javascript" src="scripts/Fist.js"></script>
+	<script type="text/javascript" src="scripts/Bag.js"></script>
+	<script type="text/javascript" src="scripts/Ring.js"></script>
+	<script type="text/javascript" src="scripts/MoveSet.js"></script>
+
+	<script type="text/javascript" src="scripts/shapes/Box.js"></script>
+	<script type="text/javascript" src="scripts/shapes/Sphere.js"></script>
+	<script type="text/javascript" src="scripts/shapes/Frustum.js"></script>
+	
+	<script type="text/javascript" src="scripts/utils/audio.js"></script>
+</body>
+</html>
