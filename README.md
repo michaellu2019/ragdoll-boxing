@@ -3,11 +3,9 @@ An exceptionally mediocre 3D Wii boxing ripoff made with cannon.js (3D web physi
 
 Demo: https://michaellu2019.github.io/ragdoll-boxing/public/index.html
 
-Key Controls:
-Q/E - Left/Right Punch
+Key Controls: \
+Q/E - Left/Right Punch \
+A/D - Left/Right Hook \
+Z/C - Left/Right Weave 
 
-A/D - Left/Right Hook
-
-Z/C - Left/Right Weave
-
-<img alt = "A film better than Rocky." src = "https://raw.githubusercontent.com/michaellu2019/ragdoll-boxing/master/public/assets/money-shot.png" height = "300px" />
+<img alt = "A film better than Rocky." src = "https://raw.githubusercontent.com/michaellu2019/ragdoll-boxing/master/public/assets/money-shot.png" height = "400px" />
