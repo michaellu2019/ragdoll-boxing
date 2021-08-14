@@ -6,7 +6,7 @@
 // websocket configuration information
 const hostIP = "SOMEONE'S IP ADDRESS";
 const port = 3000;
-let sock = new WebSocket(`ws://${hostIP}:${port}`);
+// let sock = new WebSocket(`ws://${hostIP}:${port}`);
 
 // websocket message signatures
 const connectionMsg = "web-client";
