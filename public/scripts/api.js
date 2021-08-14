@@ -8,6 +8,9 @@ const url = "http://608dev-2.net/sandbox/sc/team13/final_project/justBox.py";
 // send a GET request to retrieve all scores from all players and display 
 // the 5 highest scores for the credits screen leaderboard
 function getLeaderboard() {
+  // Make this a no-op cuz the server is down!
+  return;
+
   const requestOptions = {
     method: "GET",
     mode: "cors",
