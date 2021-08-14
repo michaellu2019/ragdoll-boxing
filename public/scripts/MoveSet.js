@@ -108,10 +108,10 @@ function MoveSet(moves) {
 
 	// send the first punch move in the punch move set to the websockets server
 	// to initialize the correlation scoring bonus 
-	if (this.moves.length > 0 && sock.connected) {
-		const socketData = "PUNCH_MISS," + this.moves[this.index].id;
-		sock.send(socketData);
-	}
+	// if (this.moves.length > 0 && sock != null && sock.connected) {
+	// 	const socketData = "PUNCH_MISS," + this.moves[this.index].id;
+		// sock.send(socketData);
+	// }
 }
 
 
@@ -138,7 +138,7 @@ MoveSet.prototype.advance = function(punches) {
 
 		// notify the websocket server that a punch move was missed and send the next queued punch move
 		const socketData = "PUNCH_MISS," + this.moves[(this.index + 1) % this.moves.length].id;
-		sock.send(socketData);
+		// sock.send(socketData);
 		
 		// have the player's opponent perform a punch move
 		this.opponentPunch(currentMove);
@@ -169,7 +169,7 @@ MoveSet.prototype.advance = function(punches) {
 
 		// notify the websocket server that a punch move was completed and send the next queued punch move
 		const socketData = "PUNCH_MADE," + this.moves[(this.index + 1) % this.moves.length].id;
-		sock.send(socketData);
+		// sock.send(socketData);
 		
 		// have the player's opponent perform a punch only if the player was blocking or weaving
 		if (currentMove.id.charAt(1) == "B" || currentMove.id.charAt(1) == "W") {
